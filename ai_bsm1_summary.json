@@ -1,0 +1,48 @@
+{
+    "scenario": "Constrained_AI_Controlled_BSM1",
+    "industry_type": "brewery",
+    "evaluation_start_day": 95.0,
+    "evaluation_end_day": 100.0,
+    "influent_bod_mg_l": 324.68375011241136,
+    "influent_cod_mg_l": 590.6492850790805,
+    "influent_tss_mg_l": 259.13580470614846,
+    "effluent_bod5_indicator_mg_l": 3.0806440888958893,
+    "effluent_bod5_status": "ASM1-Derived Biodegradable BOD5 Indicator (0.65 * [SS + XS]); not a 5-day lab assay.",
+    "average_bod_removal_percent": 98.78595214801584,
+    "average_bod_load_removed_kg_day": 5127.957564282815,
+    "effluent_asm1_cod_indicator_mg_l": 52.08273791730494,
+    "effluent_tss_mg_l": 14.049441174681096,
+    "effluent_do_mg_l": 0.11162399921244139,
+    "effluent_ammonia_mg_l": 1.3075235503687626,
+    "average_cod_removal_percent": 89.91296075462108,
+    "average_tss_removal_percent": 94.43826863215651,
+    "average_cod_load_removed_kg_day": 9713.262994463055,
+    "average_tss_load_removed_kg_day": 4414.222413903996,
+    "influent_quality_index": 54074.43508632736,
+    "effluent_quality_index": 3459.4908027664046,
+    "mixing_energy_kwh_day": 240.0,
+    "pumping_energy_kwh_day": 388.1700000000001,
+    "aeration_energy_kwh_day": 2832.5349926453964,
+    "total_energy_kwh_day": 3460.7049926453965,
+    "baseline_energy_kwh_day": 3969.5566666666655,
+    "energy_saved_kwh_day": 508.851674021269,
+    "energy_saving_percent": 12.818854011940942,
+    "energy_saved_kwh_evaluation_period": 2544.258370106345,
+    "electricity_tariff_inr_kwh": 8.0,
+    "money_saved_inr_evaluation_period": 20354.06696085076,
+    "ml_accuracy": {
+        "target_DO": {
+            "MAE": 0.013186042197048664,
+            "RMSE": 0.022904188282490346,
+            "R2": 0.9416652321815491
+        },
+        "target_aeration": {
+            "MAE": 0.11529584228992462,
+            "RMSE": 0.14461896142247194,
+            "R2": 0.29821163415908813
+        }
+    },
+    "average_control_factor": 0.847712424575844,
+    "prediction_count": 9599,
+    "data_note": "Constrained feedforward+feedback KLa controller on synthetic brewery influent."
+}

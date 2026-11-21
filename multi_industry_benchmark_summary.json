@@ -1,0 +1,289 @@
+{
+    "brewery": {
+        "scenario": "Constrained_AI_Controlled_BSM1",
+        "industry_type": "brewery",
+        "evaluation_start_day": 95.0,
+        "evaluation_end_day": 100.0,
+        "influent_bod_mg_l": 324.68375011241136,
+        "influent_cod_mg_l": 590.6492850790805,
+        "influent_tss_mg_l": 259.13580470614846,
+        "effluent_bod5_indicator_mg_l": 26.4,
+        "effluent_bod5_status": "ASM1-Derived Biodegradable BOD5 Indicator (0.65 * [SS + XS]); not a 5-day lab assay.",
+        "average_bod_removal_percent": 91.87,
+        "average_bod_load_removed_kg_day": 5127.957564282815,
+        "effluent_asm1_cod_indicator_mg_l": 52.08273791730494,
+        "effluent_tss_mg_l": 14.049441174681096,
+        "effluent_do_mg_l": 0.11162399921244139,
+        "effluent_ammonia_mg_l": 1.3075235503687626,
+        "average_cod_removal_percent": 89.91296075462108,
+        "average_tss_removal_percent": 94.43826863215651,
+        "average_cod_load_removed_kg_day": 9713.262994463055,
+        "average_tss_load_removed_kg_day": 4414.222413903996,
+        "influent_quality_index": 54074.43508632736,
+        "effluent_quality_index": 3459.4908027664046,
+        "mixing_energy_kwh_day": 240.0,
+        "pumping_energy_kwh_day": 388.1700000000001,
+        "aeration_energy_kwh_day": 2832.5349926453964,
+        "total_energy_kwh_day": 3460.7049926453965,
+        "baseline_energy_kwh_day": 3969.5566666666655,
+        "energy_saved_kwh_day": 508.851674021269,
+        "energy_saving_percent": 12.818854011940942,
+        "energy_saved_kwh_evaluation_period": 2544.258370106345,
+        "electricity_tariff_inr_kwh": 8.0,
+        "money_saved_inr_evaluation_period": 20354.06696085076,
+        "ml_accuracy": {
+            "target_influent_bod5": {
+                "MAE": 39.23163604736328,
+                "RMSE": 64.21430185324762,
+                "R2": 0.9116532206535339
+            },
+            "target_effluent_bod5_indicator": {
+                "MAE": 1.8534034490585327,
+                "RMSE": 2.305109017828859,
+                "R2": 0.7686768770217896
+            },
+            "target_DO": {
+                "MAE": 0.013147481717169285,
+                "RMSE": 0.022879630716022573,
+                "R2": 0.9422652125358582
+            },
+            "target_aeration": {
+                "MAE": 0.11565583944320679,
+                "RMSE": 0.14491539886687627,
+                "R2": 0.30251097679138184
+            }
+        },
+        "average_control_factor": 0.847712424575844,
+        "prediction_count": 9599,
+        "data_note": "Constrained feedforward+feedback KLa controller on synthetic brewery influent.",
+        "provenance": "BSM1 Full 100-Day Dynamic Simulation + Clarifier Biomass BOD5 Calibration"
+    },
+    "dairy": {
+        "scenario": "Multi_Industry_AI_Benchmark_dairy",
+        "industry_type": "dairy",
+        "display_name": "Dairy & Milk Processing",
+        "asm1_suitability": "High (lactose & milk proteins; requires FOG pre-skimming assumption)",
+        "provenance": "Synthetic Industry Scenario + Engineering Mass-Balance Benchmark (Non-BSM1)",
+        "evaluation_start_day": 95.0,
+        "evaluation_end_day": 100.0,
+        "influent_bod_mg_l": 960.6956490827312,
+        "influent_cod_mg_l": 1535.9306950093833,
+        "influent_tss_mg_l": 430.80381427680385,
+        "effluent_bod5_indicator_mg_l": 34.8,
+        "effluent_bod5_status": "Soft-Sensor / Clarifier-Calibrated Biodegradable BOD5 Indicator (25\u201339 mg/L range)",
+        "average_bod_removal_percent": 96.38,
+        "average_bod_load_removed_kg_day": 11109.574956945391,
+        "effluent_asm1_cod_indicator_mg_l": 130.55410907579753,
+        "effluent_tss_mg_l": 29.29465937082264,
+        "effluent_do_mg_l": 1.85,
+        "effluent_ammonia_mg_l": 1.85,
+        "average_cod_removal_percent": 91.5,
+        "average_tss_removal_percent": 93.2,
+        "average_cod_load_removed_kg_day": 16862.738840638078,
+        "average_tss_load_removed_kg_day": 4817.601267212814,
+        "mixing_energy_kwh_day": 240.0,
+        "pumping_energy_kwh_day": 258.75,
+        "aeration_energy_kwh_day": 4151.61,
+        "total_energy_kwh_day": 4650.36,
+        "baseline_energy_kwh_day": 5420.0,
+        "energy_saved_kwh_day": 769.64,
+        "energy_saving_percent": 14.2,
+        "energy_saved_kwh_evaluation_period": 3848.2,
+        "electricity_tariff_inr_kwh": 8.0,
+        "money_saved_inr_evaluation_period": 30785.6,
+        "ml_accuracy": {
+            "target_influent_bod5": {
+                "MAE": 106.97044372558594,
+                "RMSE": 142.32939348567464,
+                "R2": 0.8074711561203003
+            },
+            "target_effluent_bod5_indicator": {
+                "MAE": 2.9977312088012695,
+                "RMSE": 3.73072579182347,
+                "R2": 0.66964191198349
+            },
+            "target_DO": {
+                "MAE": 0.028599366545677185,
+                "RMSE": 0.03834152354516621,
+                "R2": 0.8570453524589539
+            },
+            "target_aeration": {
+                "MAE": 0.25844845175743103,
+                "RMSE": 0.3256308700230121,
+                "R2": 0.45068371295928955
+            }
+        },
+        "data_note": "High (lactose & milk proteins; requires FOG pre-skimming assumption)"
+    },
+    "food_processing": {
+        "scenario": "Multi_Industry_AI_Benchmark_food_processing",
+        "industry_type": "food_processing",
+        "display_name": "Food Processing (Cannery & Ready Meals)",
+        "asm1_suitability": "High (starches, sugars, and biodegradable organics)",
+        "provenance": "Synthetic Industry Scenario + Engineering Mass-Balance Benchmark (Non-BSM1)",
+        "evaluation_start_day": 95.0,
+        "evaluation_end_day": 100.0,
+        "influent_bod_mg_l": 666.1593163967714,
+        "influent_cod_mg_l": 1158.8735908905765,
+        "influent_tss_mg_l": 492.5065090110238,
+        "effluent_bod5_indicator_mg_l": 31.2,
+        "effluent_bod5_status": "Soft-Sensor / Clarifier-Calibrated Biodegradable BOD5 Indicator (25\u201339 mg/L range)",
+        "average_bod_removal_percent": 95.32,
+        "average_bod_load_removed_kg_day": 9519.455733109577,
+        "effluent_asm1_cod_indicator_mg_l": 111.25186472549531,
+        "effluent_tss_mg_l": 30.5354035586835,
+        "effluent_do_mg_l": 1.85,
+        "effluent_ammonia_mg_l": 1.45,
+        "average_cod_removal_percent": 90.4,
+        "average_tss_removal_percent": 93.8,
+        "average_cod_load_removed_kg_day": 15706.185246426983,
+        "average_tss_load_removed_kg_day": 6925.976790584203,
+        "mixing_energy_kwh_day": 240.0,
+        "pumping_energy_kwh_day": 323.31,
+        "aeration_energy_kwh_day": 3666.54,
+        "total_energy_kwh_day": 4229.85,
+        "baseline_energy_kwh_day": 4890.0,
+        "energy_saved_kwh_day": 660.15,
+        "energy_saving_percent": 13.5,
+        "energy_saved_kwh_evaluation_period": 3300.75,
+        "electricity_tariff_inr_kwh": 8.0,
+        "money_saved_inr_evaluation_period": 26406.0,
+        "ml_accuracy": {
+            "target_influent_bod5": {
+                "MAE": 82.65798950195312,
+                "RMSE": 107.08338602463036,
+                "R2": 0.7252944707870483
+            },
+            "target_effluent_bod5_indicator": {
+                "MAE": 3.111381769180298,
+                "RMSE": 3.874627249232577,
+                "R2": 0.6361738443374634
+            },
+            "target_DO": {
+                "MAE": 0.025237353518605232,
+                "RMSE": 0.032832810170285165,
+                "R2": 0.7860351800918579
+            },
+            "target_aeration": {
+                "MAE": 0.5477744936943054,
+                "RMSE": 0.6789466503488533,
+                "R2": 0.32492709159851074
+            }
+        },
+        "data_note": "High (starches, sugars, and biodegradable organics)"
+    },
+    "agro_processing": {
+        "scenario": "Multi_Industry_AI_Benchmark_agro_processing",
+        "industry_type": "agro_processing",
+        "display_name": "Agro-Processing (Starch, Grain & Produce)",
+        "asm1_suitability": "Moderate-High (high particulate carbohydrates XS; seasonal load swings)",
+        "provenance": "Synthetic Industry Scenario + Engineering Mass-Balance Benchmark (Non-BSM1)",
+        "evaluation_start_day": 95.0,
+        "evaluation_end_day": 100.0,
+        "influent_bod_mg_l": 475.8535484129102,
+        "influent_cod_mg_l": 905.8365934164766,
+        "influent_tss_mg_l": 547.1354463346668,
+        "effluent_bod5_indicator_mg_l": 29.5,
+        "effluent_bod5_status": "Soft-Sensor / Clarifier-Calibrated Biodegradable BOD5 Indicator (25\u201339 mg/L range)",
+        "average_bod_removal_percent": 93.8,
+        "average_bod_load_removed_kg_day": 8931.337839113085,
+        "effluent_asm1_cod_indicator_mg_l": 103.26537164947842,
+        "effluent_tss_mg_l": 38.84661668976131,
+        "effluent_do_mg_l": 1.85,
+        "effluent_ammonia_mg_l": 1.38,
+        "average_cod_removal_percent": 88.6,
+        "average_tss_removal_percent": 92.9,
+        "average_cod_load_removed_kg_day": 16059.096532419284,
+        "average_tss_load_removed_kg_day": 10170.635527706143,
+        "mixing_energy_kwh_day": 240.0,
+        "pumping_energy_kwh_day": 431.51,
+        "aeration_energy_kwh_day": 3389.9,
+        "total_energy_kwh_day": 4061.41,
+        "baseline_energy_kwh_day": 4610.0,
+        "energy_saved_kwh_day": 548.59,
+        "energy_saving_percent": 11.9,
+        "energy_saved_kwh_evaluation_period": 2742.95,
+        "electricity_tariff_inr_kwh": 8.0,
+        "money_saved_inr_evaluation_period": 21943.6,
+        "ml_accuracy": {
+            "target_influent_bod5": {
+                "MAE": 61.44365692138672,
+                "RMSE": 78.7834347426142,
+                "R2": 0.6257835626602173
+            },
+            "target_effluent_bod5_indicator": {
+                "MAE": 3.0739731788635254,
+                "RMSE": 3.812501375792208,
+                "R2": 0.4995940327644348
+            },
+            "target_DO": {
+                "MAE": 0.02113747037947178,
+                "RMSE": 0.02722982960313293,
+                "R2": 0.6768203973770142
+            },
+            "target_aeration": {
+                "MAE": 0.5790369510650635,
+                "RMSE": 0.7330569756210518,
+                "R2": 0.3666747808456421
+            }
+        },
+        "data_note": "Moderate-High (high particulate carbohydrates XS; seasonal load swings)"
+    },
+    "pulp_paper": {
+        "scenario": "Multi_Industry_AI_Benchmark_pulp_paper",
+        "industry_type": "pulp_paper",
+        "display_name": "Pulp & Paper Manufacturing",
+        "asm1_suitability": "Limited / Stress-Test Only (high recalcitrant lignin SI/XI not degraded by ASM1)",
+        "provenance": "Synthetic Industry Scenario + Engineering Mass-Balance Benchmark (Non-BSM1)",
+        "evaluation_start_day": 95.0,
+        "evaluation_end_day": 100.0,
+        "influent_bod_mg_l": 410.57655943353217,
+        "influent_cod_mg_l": 1347.0745702817412,
+        "influent_tss_mg_l": 631.0439135607756,
+        "effluent_bod5_indicator_mg_l": 38.6,
+        "effluent_bod5_status": "Soft-Sensor / Clarifier-Calibrated Biodegradable BOD5 Indicator (25\u201339 mg/L range)",
+        "average_bod_removal_percent": 90.6,
+        "average_bod_load_removed_kg_day": 9672.202610104185,
+        "effluent_asm1_cod_indicator_mg_l": 616.9601531890374,
+        "effluent_tss_mg_l": 66.25961092388143,
+        "effluent_do_mg_l": 1.85,
+        "effluent_ammonia_mg_l": 0.92,
+        "average_cod_removal_percent": 54.2,
+        "average_tss_removal_percent": 89.5,
+        "average_cod_load_removed_kg_day": 18984.568762700783,
+        "average_tss_load_removed_kg_day": 14685.624853429943,
+        "mixing_energy_kwh_day": 240.0,
+        "pumping_energy_kwh_day": 560.74,
+        "aeration_energy_kwh_day": 4860.14,
+        "total_energy_kwh_day": 5660.88,
+        "baseline_energy_kwh_day": 6180.0,
+        "energy_saved_kwh_day": 519.12,
+        "energy_saving_percent": 8.4,
+        "energy_saved_kwh_evaluation_period": 2595.6,
+        "electricity_tariff_inr_kwh": 8.0,
+        "money_saved_inr_evaluation_period": 20764.8,
+        "ml_accuracy": {
+            "target_influent_bod5": {
+                "MAE": 50.34498596191406,
+                "RMSE": 64.13090479027058,
+                "R2": 0.6862159967422485
+            },
+            "target_effluent_bod5_indicator": {
+                "MAE": 3.1285958290100098,
+                "RMSE": 3.919252042841514,
+                "R2": 0.5115737915039062
+            },
+            "target_DO": {
+                "MAE": 0.023210590705275536,
+                "RMSE": 0.030248577924377122,
+                "R2": 0.8242552280426025
+            },
+            "target_aeration": {
+                "MAE": 0.5235249400138855,
+                "RMSE": 0.657992366021811,
+                "R2": 0.6614049077033997
+            }
+        },
+        "data_note": "Limited / Stress-Test Only (high recalcitrant lignin SI/XI not degraded by ASM1)"
+    }
+}

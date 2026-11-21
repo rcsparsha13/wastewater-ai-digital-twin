@@ -1,0 +1,62 @@
+{
+    "brewery": {
+        "display_name": "Brewery & Beverage Processing",
+        "asm1_suitability": "High (biodegradable carbohydrates & ethanol; standard ASM1 kinetics apply)",
+        "rows": 144001,
+        "mean_flow_m3_day": 18001.608649501297,
+        "mean_cod_mg_l": 572.6071595350859,
+        "mean_bod_mg_l": 315.0277049369186,
+        "mean_effluent_bod5_mg_l": 27.36676843432844,
+        "mean_tss_mg_l": 257.8662880394884,
+        "shock_rows": 5647,
+        "provenance": "Synthetic scenario for multi-industry benchmarking; not measured plant data."
+    },
+    "dairy": {
+        "display_name": "Dairy & Milk Processing",
+        "asm1_suitability": "High (lactose & milk proteins; requires FOG pre-skimming assumption)",
+        "rows": 144001,
+        "mean_flow_m3_day": 12001.464542356223,
+        "mean_cod_mg_l": 1559.239895168427,
+        "mean_bod_mg_l": 974.2876176031621,
+        "mean_effluent_bod5_mg_l": 38.082467778773356,
+        "mean_tss_mg_l": 433.82174565925555,
+        "shock_rows": 6685,
+        "provenance": "Synthetic scenario for multi-industry benchmarking; not measured plant data."
+    },
+    "food_processing": {
+        "display_name": "Food Processing (Cannery & Ready Meals)",
+        "asm1_suitability": "High (starches, sugars, and biodegradable organics)",
+        "rows": 144001,
+        "mean_flow_m3_day": 15002.969254102853,
+        "mean_cod_mg_l": 1143.325222283208,
+        "mean_bod_mg_l": 657.4199359929721,
+        "mean_effluent_bod5_mg_l": 34.73608436715495,
+        "mean_tss_mg_l": 488.84799564836067,
+        "shock_rows": 3880,
+        "provenance": "Synthetic scenario for multi-industry benchmarking; not measured plant data."
+    },
+    "agro_processing": {
+        "display_name": "Agro-Processing (Starch, Grain & Produce)",
+        "asm1_suitability": "Moderate-High (high particulate carbohydrates XS; seasonal load swings)",
+        "rows": 144001,
+        "mean_flow_m3_day": 19999.84807115992,
+        "mean_cod_mg_l": 916.5076826657576,
+        "mean_bod_mg_l": 481.05213211760025,
+        "mean_effluent_bod5_mg_l": 33.751810189923795,
+        "mean_tss_mg_l": 550.6122497326689,
+        "shock_rows": 3732,
+        "provenance": "Synthetic scenario for multi-industry benchmarking; not measured plant data."
+    },
+    "pulp_paper": {
+        "display_name": "Pulp & Paper Manufacturing",
+        "asm1_suitability": "Limited / Stress-Test Only (high recalcitrant lignin SI/XI not degraded by ASM1)",
+        "rows": 144001,
+        "mean_flow_m3_day": 25998.016273745754,
+        "mean_cod_mg_l": 1347.5312055549728,
+        "mean_bod_mg_l": 410.82575510357157,
+        "mean_effluent_bod5_mg_l": 43.56329764733306,
+        "mean_tss_mg_l": 630.8105496884668,
+        "shock_rows": 3227,
+        "provenance": "Synthetic scenario for multi-industry benchmarking; not measured plant data."
+    }
+}
